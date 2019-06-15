@@ -20,7 +20,6 @@ public class FileTester {
             System.out.println(arg);
         }
 
-
         PropertiesReader propertiesReader = new PropertiesReader();
 
         Workbook workbook = new HSSFWorkbook();
@@ -37,5 +36,7 @@ public class FileTester {
                         Paths.get("C:\\1\\" + fullFileName)));
 
         workbook.close();
+
+        propertiesReader.closeReader();
     }
 }
